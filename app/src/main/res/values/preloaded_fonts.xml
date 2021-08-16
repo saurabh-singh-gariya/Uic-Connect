@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/atomic_age</item>
+        <item>@font/baloo</item>
+        <item>@font/bitter</item>
+        <item>@font/bree_serif</item>
+        <item>@font/carter_one</item>
+        <item>@font/copse</item>
+        <item>@font/eagle_lake</item>
+        <item>@font/emilys_candy</item>
+        <item>@font/spicy_rice</item>
+        <item>@font/trade_winds</item>
+    </array>
+</resources>

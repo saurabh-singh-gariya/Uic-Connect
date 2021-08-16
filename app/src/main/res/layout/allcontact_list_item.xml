@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:backgroundTint="@color/white"
+    app:cardElevation="10dp"
+    app:contentPaddingLeft="5dp"
+    app:contentPaddingRight="5dp"
+    app:contentPaddingTop="15dp"
+    app:contentPaddingBottom="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+            android:id="@+id/all_contact_name"
+            android:layout_width="0dp"
+                android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/blank"
+            android:textSize="24sp"
+            android:textColor="@color/color_primary"
+            android:textStyle="bold"
+            android:fontFamily="@font/copse"
+            android:layout_marginBottom="4dp"/>
+
+<!--            <Button-->
+<!--                android:id="@+id/favt_btn"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:background="@drawable/ic_baseline_favorite_border_24" />-->
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/all_contact_special_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/blank"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/all_contact_email"
+                style="@style/EmailPhoneTvAll"
+                android:layout_width="90dp"
+
+                 />
+
+            <TextView
+                android:id="@+id/all_contact_phone"
+                style="@style/EmailPhoneTvAll"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp">
+
+            <Button
+                android:id="@+id/all_contact_btn_email"
+                style="@style/BtnAllContactList"
+                android:layout_marginRight="8dp"
+                android:text="@string/email" />
+
+
+            <Button
+                android:id="@+id/all_contact_btn_call"
+                style="@style/BtnAllContactList"
+                android:layout_marginLeft="8dp"
+                android:text="@string/call" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

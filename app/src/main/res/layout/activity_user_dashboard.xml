@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:background="#D6CECE"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    android:background="@drawable/back"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:fontFamily="monospace"
+                        android:background="#00000000"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:id="@+id/image123"
+                        android:layout_width="200dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/cu_logo"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/bree_serif"
+                        android:text="Address Book"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="240dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="150dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cu_admin_card"
+                            style="@style/UserDashCard"
+                            app:cardCornerRadius="25dp"
+                            android:onClick="getCuAdmins">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@color/white"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imagepro1"
+                                    style="@style/UserDashIcon"
+                                    android:src="@drawable/admin"/>
+
+                                <TextView
+                                    style="@style/UserDashCardTextView"
+                                    android:layout_below="@+id/imagepro1"
+                                    android:text="@string/admin" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cu_helpline_card"
+                            style="@style/UserDashCard"
+                            app:cardCornerRadius="30dp"
+                            android:onClick="getCuHelpline">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@color/white"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/image2"
+                                    style="@style/UserDashIcon"
+                                    android:src="@drawable/helpline"/>
+
+                                <TextView
+                                    android:text="@string/helpline"
+                                    android:layout_below="@+id/image2"
+                                    style="@style/UserDashCardTextView"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="150dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cu_professor_card"
+                            style="@style/UserDashCard"
+                            app:cardCornerRadius="25dp"
+                            android:onClick="getCuProfessor">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@color/white"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/image3"
+                                    style="@style/UserDashIcon"
+                                    android:src="@drawable/teacher"/>
+
+                                <TextView
+                                    style="@style/UserDashCardTextView"
+                                    android:text="@string/prof"
+                                    android:layout_below="@+id/image3"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cu_fav_card"
+                            style="@style/UserDashCard"
+                            app:cardCornerRadius="25dp"
+                            android:onClick="getUserTimetable">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@color/white"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imagepro"
+                                    style="@style/UserDashIcon"
+                                    android:src="@drawable/timetable"/>
+
+                                <TextView
+                                    style="@style/UserDashCardTextView"
+                                    android:text="@string/fav"
+                                    android:layout_below="@+id/imagepro"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="150dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cu_social_card"
+                            style="@style/UserDashCard"
+                            app:cardCornerRadius="30dp"
+                            android:onClick="getUserProfile">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@color/white"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/image10"
+                                    style="@style/UserDashIcon"
+                                    android:src="@drawable/pppp"/>
+
+                                <TextView
+                                    style="@style/UserDashCardTextView"
+                                    android:text="@string/social"
+                                    android:layout_below="@+id/image10"/>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cu_transport_card"
+                            style="@style/UserDashCard"
+                            app:cardCornerRadius="25dp"
+                            android:onClick="getCuReach">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:background="@color/white"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/imagepro9"
+                                    style="@style/UserDashIcon"
+                                    android:src="@drawable/map"/>
+
+                                <TextView
+                                    style="@style/UserDashCardTextView"
+                                    android:text="@string/dsw"
+                                    android:layout_below="@+id/imagepro9"/>
+
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/logout_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round_bg"
+                            android:padding="10dp"
+                            android:text="@string/logout"
+                            android:textColor="@color/white"
+                            android:textAllCaps="true"
+                            android:textSize="20dp"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

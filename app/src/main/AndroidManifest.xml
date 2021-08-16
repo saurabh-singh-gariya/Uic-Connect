@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uicnotifier">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_addressbook"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_addressbook"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UICNotifier">
+        <activity android:name="com.example.uicaddressbook.UserProfile"></activity>
+        <activity android:name="com.example.uicaddressbook.AddEdit.EditOther" />
+        <activity android:name="com.example.uicaddressbook.AddEdit.EditFaculty" />
+        <activity android:name="com.example.uicaddressbook.AddEdit.AddFaculty" />
+        <activity android:name="com.example.uicaddressbook.AddEdit.AddOther" />
+        <activity android:name="com.example.uicaddressbook.ContactDetailsAdmin"/>
+        <activity android:name="com.example.uicaddressbook.ContactsDetails" />
+        <activity android:name="com.example.uicaddressbook.Dashboard.AdminDashboard" />
+        <activity android:name="com.example.uicaddressbook.Dashboard.UserDashboard" />
+        <activity android:name="com.example.uicaddressbook.LoginActivity" />
+        <activity android:name="com.example.uicaddressbook.OnBoarding" />
+        <activity android:name="com.example.uicaddressbook.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.uicaddressbook.MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

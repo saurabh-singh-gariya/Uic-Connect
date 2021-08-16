@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">UIC Connect</string>
+    <string name="onBoarding_one">Now all the important Contacts on your Fingertips</string>
+    <string name="onBoarding_two">Say No to Searching University contacts on Internet</string>
+    <string name="onBoarding_three">Call and Send Email through the App</string>
+    <string name="btn_letsBegin">LETS BEGIN</string>
+    <string name="blank">Blank String</string>
+    <string name="skip">Skip</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="uid">UID</string>
+    <string name="profile_icon">Profile</string>
+    <string name="email">Email</string>
+    <string name="phone">phone</string>
+    <string name="helpline">Helpline</string>
+    <string name="fav">Time Table</string>
+    <string name="prof">Professors</string>
+    <string name="search">Search</string>
+    <string name="admin">Cu Admin</string>
+    <string name="social">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="call">call</string>
+    <string name="dsw">How To Reach Us</string>
+    <string name="searchContact">Search Contact</string>
+    <string name="other">Others</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="addProf">Add Faculty</string>
+    <string name="addOther">Add Others</string>
+    <string name="add">Add Contact</string>
+    <string name="update">Update</string>
+    <string name="filename">File Name</string>
+    <string name="fileUrl">File Url</string>
+</resources>
